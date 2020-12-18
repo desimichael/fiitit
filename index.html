@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fiitit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <div class="title">fiit<strong>it</strong></div>
+      <div class="cart-btn">
+        <div class="fas fa-cart-plus"></div>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </div>
+  <!-- hero -->
+  <header class="hero">
+    <div class="banner">
+      <div class="banner-title">fiitit attire</div>
+      <button class="banner-btn">
+        <a href="#products">
+          get fitted
+        <i class="fas fa-chevron-down"></i>
+        </a>
+      </button>
+    </div>
+  </header>
+  <!-- end hero -->
+  <!-- products -->
+    <section id="products">
+      <section class="section-title">
+        <h2>styled fiits</h2>
+      </section>
+      <div class="products-center">
+        <!-- Single Product Here() like react object -->
+      </div>
+    </section>
+  <!-- end of products -->
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+      <i class="fa fa-window-close"></i>
+      </span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+      <!-- cart item -->
+      <!-- <div class="cart-item">
+        innerHTML()
+      </div> -->
+      <!-- end of cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>your total : $<span class="cart-total">0</span></h3>
+        <button class="clear-btn banner-btn">clear cart</button>
+      </div>
+      </div>
+    </div>
+  <!-- end of cart -->
+  <!-- contentful -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <!-- app.js -->
+  <script src="app.js"></script>
+</body>
+</html>
