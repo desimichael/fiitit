@@ -1,80 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>fiitit</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  <link rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-      rel="stylesheet">
-</head>
-<body>
-  <div class="navbar">
-    <div class="navbar-center">
-      <span class="nav-icon">
-        <i class="fas fa-bars"></i>
-      </span>
-      <div class="title">fiit<strong>it</strong></div>
-      <div class="cart-btn">
-        <div class="fas fa-cart-plus"></div>
-        <div class="cart-items">0</div>
-      </div>
-    </div>
-  </div>
-  <!-- hero -->
-  <header class="hero">
-    <div class="banner">
-      <div class="banner-title">fiitit attire</div>
-      <button class="banner-btn">
-        <a href="#products">
-          get fitted
-        <i class="fas fa-chevron-down"></i>
-        </a>
-      </button>
-    </div>
-  </header>
-  <!-- end hero -->
-  <!-- products -->
-    <section id="products">
-      <section class="section-title">
-        <h2>styled fiits</h2>
-      </section>
-      <div class="products-center">
-        <!-- Single Product Here() like react object -->
-      </div>
-    </section>
-  <!-- end of products -->
-  <!-- cart -->
-  <div class="cart-overlay">
-    <div class="cart">
-      <span class="close-cart">
-      <i class="fa fa-window-close"></i>
-      </span>
-      <h2>your cart</h2>
-      <div class="cart-content">
-      <!-- cart item -->
-      <!-- <div class="cart-item">
-        innerHTML()
-      </div> -->
-      <!-- end of cart item -->
-      </div>
-      <div class="cart-footer">
-        <h3>your total : $<span class="cart-total">0</span></h3>
-        <button class="clear-btn banner-btn">clear cart</button>
-      </div>
-      </div>
-    </div>
-  <!-- end of cart -->
-  <!-- contentful -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-  <!-- app.js -->
-  <script src="app.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>fiitit</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="navbar__center">
+				<div class="navbar__title">fiit<strong>it</strong></div>
+				<ul class="navbar__menu-links">
+					<li class="navbar__menu-link navbar__menu-link--active">
+						Men
+					</li>
+					<li class="navbar__menu-link">Women</li>
+				</ul>
+				<div class="navbar__cart-btn">
+					<span class="navbar__icon">
+						<i class="fas fa-cart-plus"></i>
+					</span>
+					<div class="navbar__cart-items">0</div>
+				</div>
+			</div>
+		</div>
+		<!-- hero -->
+		<header class="hero">
+			<div class="hero__banner">
+				<div class="hero__banner-title">
+					fiit<strong>it</strong> attire
+				</div>
+				<button class="hero__banner-btn">
+					<a href="#products"> </a>
+					get fitted
+				</button>
+			</div>
+		</header>
+		<!-- end hero -->
+		<!-- products -->
+		<section class="products">
+			<h2 class="products__title">styled fiits</h2>
+			<div class="products__grid">
+				<article class="products__product">
+					<div class="products__product-img-container">
+						<img
+							src="./images/product-1.jpg"
+							alt="product"
+							class="products__product-img"
+						/>
+						<button class="products__product-bag-btn">
+							<i class="fas fa-shopping-cart"></i>
+							add to cart
+						</button>
+					</div>
+					<div class="products__product-group">
+						<h3 class="products__product-group-title">Outfit 1</h3>
+						<h4 class="products__product-group-price">
+							<i class="fas fa-dollar-sign"></i>40.00
+						</h4>
+					</div>
+				</article>
+			</div>
+		</section>
+		<!-- end of products -->
+		<!-- cart -->
+		<div class="cart cart--show-cart">
+			<span class="cart__close-cart">
+				<i class="fas fa-window-close"></i>
+			</span>
+			<h2 class="cart__title">your cart</h2>
+			<div class="cart__content">
+				<!-- cart item -->
+				<div class="cart__item">
+					<img src="#" alt="product image" class="cart__img" />
+					<h4 class="cart__item-title">product 1</h4>
+					<h5 class="cart__item-price">
+						<i class="fas fa-dollar-sign"></i>
+						40.00
+					</h5>
+					<span class="card__item-remove"> remove </span>
+				</div>
+				<div class="cart__item-amounts">
+					<i class="fas fa-chevron-up"></i>
+					<p class="cart__item-amount">3</p>
+					<i class="fas fa-chevron-down"></i>
+				</div>
+				<!-- end of cart -->
+			</div>
+			<div class="cart__footer">
+				<h3 class="cart__footer-title">
+					your total :
+					<i class="fas fa-dollar-sign"></i>
+					<span class="cart__total">0</span>
+					<button class="cart__clear-cart cart__banner-btn">
+						clear cart
+					</button>
+				</h3>
+			</div>
+		</div>
+		<!-- contentful -->
+		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+		<!-- app.js -->
+		<script src="app.js"></script>
+	</body>
 </html>
