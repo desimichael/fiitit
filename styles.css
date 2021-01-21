@@ -261,8 +261,7 @@ body {
 	z-index: 3;
 	padding: 25px;
 	transition: var(--mainTransition);
-	/* transform: translateX(100%); */
-	visibility: visible;
+	transform: translateX(100%);
 }
 .cart--show-cart {
 	transform: translateX(0);
@@ -290,48 +289,72 @@ body {
 	margin-bottom: 2rem;
 }
 /*---------- Cart Item -------------------- */
-/* .cart-item {
+
+.cart__block {
 	display: grid;
-	align-items: center;
 	grid-template-columns: auto 1fr auto;
-	grid-column-gap: 1.5rem;
-	margin: 1.5rem 0;
-} */
-/* .cart-item img {
+	align-items: center;
+	gap: 25px;
+	margin: 25px 0;
+}
+.cart__block-item-img {
 	width: 75px;
 	height: 75px;
-} */
-/* .cart-item h4 {
+}
+.cart__block-item-title {
 	font-size: 0.85rem;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	letter-spacing: var(--mainSpacing);
-} */
-/* .cart-item h5 {
-	margin: 0.5rem 0;
+}
+.cart__block-item-price {
+	margin: 8px 0;
+	font-weight: 700;
 	letter-spacing: var(--mainSpacing);
-} */
-/* .item-amount {
+}
+.cart__block-item-amount {
 	text-align: center;
-} */
-/* .remove-item {
-	color: grey;
+}
+.cart__block-item-remove {
+	color: var(--primaryColor);
 	cursor: pointer;
-} */
-/* .fa-chevron-up,
+}
+.fa-chevron-up,
 .fa-chevron-down {
 	color: var(--primaryColor);
 	cursor: pointer;
-} */
+}
 /*---------- End of Cart Item -------------------- */
 
-/* .cart-footer {
+.cart__footer {
 	margin-top: 2rem;
 	letter-spacing: var(--mainSpacing);
 	text-align: center;
-} */
-/* .cart-footer h3 {
-	text-transform: capitalize;
-	margin-bottom: 1rem;
-} */
+}
+.cart__footer-title {
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 1.3rem;
+}
+.cart__banner-btn {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 0.9rem 1rem;
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+	font-size: 1rem;
+	background: var(--mainWhite);
+	color: var(--mainBlack);
+	border: 1px solid var(--primaryColor);
+	border-radius: 5px;
+	transition: var(--mainTransition);
+	cursor: pointer;
+}
+.cart__banner-btn:hover {
+	background: var(--primaryColor);
+	color: var(--mainWhite);
+	border: 1px solid var(--mainWhite);
+	font-weight: 700;
+}
 
 /* --------------- End of Cart ---------------- */

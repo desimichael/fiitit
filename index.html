@@ -77,26 +77,34 @@
 		</section>
 		<!-- end of products -->
 		<!-- cart -->
-		<div class="cart cart--show-cart">
+		<div class="cart">
 			<span class="cart__close-cart">
 				<i class="fas fa-window-close"></i>
 			</span>
 			<h2 class="cart__title">your cart</h2>
 			<div class="cart__content">
 				<!-- cart item -->
-				<div class="cart__item">
-					<img src="#" alt="product image" class="cart__img" />
-					<h4 class="cart__item-title">product 1</h4>
-					<h5 class="cart__item-price">
-						<i class="fas fa-dollar-sign"></i>
-						40.00
-					</h5>
-					<span class="card__item-remove"> remove </span>
-				</div>
-				<div class="cart__item-amounts">
-					<i class="fas fa-chevron-up"></i>
-					<p class="cart__item-amount">3</p>
-					<i class="fas fa-chevron-down"></i>
+				<div class="cart__block">
+					<div class="cart__block-item">
+						<img
+							src="./images/product-1.jpg"
+							alt="product image"
+							class="cart__block-item-img"
+						/>
+					</div>
+					<div class="cart__block-item">
+						<h4 class="cart__block-item-title">product 1</h4>
+						<h5 class="cart__block-item-price">
+							<i class="fas fa-dollar-sign"></i>
+							40.00
+						</h5>
+						<span class="cart__block-item-remove"> remove </span>
+					</div>
+					<div class="cart__block-item">
+						<i class="fas fa-chevron-up"></i>
+						<p class="cart__block-item-amount">3</p>
+						<i class="fas fa-chevron-down"></i>
+					</div>
 				</div>
 				<!-- end of cart -->
 			</div>
@@ -105,10 +113,10 @@
 					your total :
 					<i class="fas fa-dollar-sign"></i>
 					<span class="cart__total">0</span>
-					<button class="cart__clear-cart cart__banner-btn">
-						clear cart
-					</button>
 				</h3>
+				<button class="cart__banner-btn cart__banner-btn--clear-cart">
+					clear cart
+				</button>
 			</div>
 		</div>
 		<!-- contentful -->
