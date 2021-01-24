@@ -23,11 +23,10 @@
 		<div class="navbar">
 			<div class="navbar__center">
 				<div class="navbar__title">fiit<strong>it</strong></div>
-				<ul class="navbar__menu-links">
-					<li class="navbar__menu-link navbar__menu-link--active">
-						Men
-					</li>
-					<li class="navbar__menu-link">Women</li>
+				<ul class="navbar__links">
+					<li class="navbar__link">Men</li>
+					<li class="navbar__link">Women</li>
+					<li class="navbar__link">Kids</li>
 				</ul>
 				<div class="navbar__cart-btn">
 					<span class="navbar__icon">
@@ -53,26 +52,8 @@
 		<!-- products -->
 		<section class="products">
 			<h2 class="products__title">styled fiits</h2>
-			<div class="products__grid">
-				<article class="products__product">
-					<div class="products__product-img-container">
-						<img
-							src="./images/product-1.jpg"
-							alt="product"
-							class="products__product-img"
-						/>
-						<button class="products__product-bag-btn">
-							<i class="fas fa-shopping-cart"></i>
-							add to cart
-						</button>
-					</div>
-					<div class="products__product-group">
-						<h3 class="products__product-group-title">Outfit 1</h3>
-						<h4 class="products__product-group-price">
-							<i class="fas fa-dollar-sign"></i>40.00
-						</h4>
-					</div>
-				</article>
+			<div class="products__center">
+				<!-- single products code  -->
 			</div>
 		</section>
 		<!-- end of products -->
@@ -85,24 +66,26 @@
 			<div class="cart__content">
 				<!-- cart item -->
 				<div class="cart__block">
-					<div class="cart__block-item">
+					<div class="cart__item">
 						<img
 							src="./images/product-1.jpg"
 							alt="product image"
-							class="cart__block-item-img"
+							class="cart__item-img"
 						/>
 					</div>
-					<div class="cart__block-item">
-						<h4 class="cart__block-item-title">product 1</h4>
-						<h5 class="cart__block-item-price">
+					<div class="cart__item">
+						<h4 class="cart__item-title">product 1</h4>
+						<h5 class="cart__item-price">
 							<i class="fas fa-dollar-sign"></i>
 							40.00
 						</h5>
-						<span class="cart__block-item-remove"> remove </span>
+						<span class="cart__item cart__item--remove">
+							remove
+						</span>
 					</div>
-					<div class="cart__block-item">
+					<div class="cart__item">
 						<i class="fas fa-chevron-up"></i>
-						<p class="cart__block-item-amount">3</p>
+						<p class="cart__item-amount">3</p>
 						<i class="fas fa-chevron-down"></i>
 					</div>
 				</div>
@@ -114,7 +97,7 @@
 					<i class="fas fa-dollar-sign"></i>
 					<span class="cart__total">0</span>
 				</h3>
-				<button class="cart__banner-btn cart__banner-btn--clear-cart">
+				<button class="cart__btn cart__btn--clear-cart">
 					clear cart
 				</button>
 			</div>

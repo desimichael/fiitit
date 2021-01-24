@@ -57,18 +57,18 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 }
-.navbar__menu-links {
+.navbar__links {
 	display: flex;
+	justify-content: space-evenly;
 	max-width: 300px;
 	width: 100%;
 	flex: none;
 }
-.navbar__menu-link {
+.navbar__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 80px;
-	width: 300px;
 	font-size: 1.3rem;
 	font-weight: 500;
 	letter-spacing: var(--mainSpacing);
@@ -76,12 +76,12 @@ body {
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
 }
-.navbar__menu-link--active,
-.navbar__menu-link:hover {
+.navbar__link--active,
+.navbar__link:hover {
 	color: var(--primaryColor);
 	border-bottom: 4px solid var(--primaryColor);
 }
-.navbar__menu-link--active {
+.navbar__link--active {
 	color: var(--primaryColor);
 	border-bottom: 4px solid var(--primaryColor);
 }
@@ -169,14 +169,14 @@ body {
 	font-weight: 300;
 	text-transform: capitalize;
 }
-.products__grid {
+.products__center {
 	width: 90vw;
 	margin: 0 auto;
 	max-width: 1170px;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 1.5rem;
-	/* grid-row-gap: 2rem; */
+	grid-row-gap: 2rem;
 }
 .products__product {
 	position: relative;
@@ -185,46 +185,48 @@ body {
 	transition: 0.3s;
 	box-shadow: var(--shadow);
 }
-.products__product-img-container {
+.products__img-container {
 	position: relative;
 	overflow: hidden;
 }
-.products__product-img {
+.products__img {
 	display: block;
 	width: 100%;
 	min-height: 12rem;
 	transition: var(--mainTransition);
 }
-.products__product-img-container:hover .products__product-img {
+.products__img-container:hover .products__img {
 	transform: scale(0.9);
 	border: 1px solid var(--mainBlack);
 }
-.products__product-bag-btn {
+.products__bag-btn {
 	position: absolute;
 	top: 70%;
 	right: 0;
 	background: var(--primaryColor);
 	color: var(--mainWhite);
+	/* border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px; */
 	border: none;
 	text-transform: uppercase;
 	padding: 0.5rem 0.75rem;
 	letter-spacing: var(--mainSpacing);
 	font-weight: bold;
 	transition: var(--mainTransition);
-	transform: translateX(101%);
+	transform: translateX(100%);
 	cursor: pointer;
 }
-.products__product-bag-btn:hover {
+.products__bag-btn:hover {
 	background: var(--mainWhite);
 	color: var(--primaryColor);
 }
 .fa-shopping-cart {
 	margin-right: 0.5rem;
 }
-.products__product-img-container:hover .products__product-bag-btn {
+.products__img-container:hover .products__bag-btn {
 	transform: translateX(0);
 }
-.products__product-group {
+.products__group {
 	background: var(--mainGrey);
 	display: flex;
 	justify-content: center;
@@ -232,14 +234,14 @@ body {
 	height: 60px;
 	padding: 0 10px;
 }
-.products__product-group-title {
+.products__group-title {
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1rem;
 	letter-spacing: var(--mainSpacing);
 }
 
-.products__product-group-price {
+.products__group-price {
 	margin-top: 10px;
 	font-size: 1.5rem;
 	font-weight: 900;
@@ -297,26 +299,32 @@ body {
 	gap: 25px;
 	margin: 25px 0;
 }
-.cart__block-item-img {
-	width: 75px;
-	height: 75px;
+.cart__item-img {
+	width: 90px;
+	height: 90px;
+	object-fit: contain;
+	object-position: top center;
 }
-.cart__block-item-title {
+.cart__item-title {
 	font-size: 0.85rem;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: var(--mainSpacing);
 }
-.cart__block-item-price {
+.cart__item-price {
 	margin: 8px 0;
-	font-weight: 700;
+	font-weight: 900;
 	letter-spacing: var(--mainSpacing);
 }
-.cart__block-item-amount {
+.cart__item-amount {
 	text-align: center;
 }
-.cart__block-item-remove {
+.cart__item--remove {
 	color: var(--primaryColor);
 	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	font-weight: 500;
 }
 .fa-chevron-up,
 .fa-chevron-down {
@@ -335,7 +343,7 @@ body {
 	font-weight: 500;
 	margin-bottom: 1.3rem;
 }
-.cart__banner-btn {
+.cart__btn {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
@@ -350,7 +358,7 @@ body {
 	transition: var(--mainTransition);
 	cursor: pointer;
 }
-.cart__banner-btn:hover {
+.cart__btn:hover {
 	background: var(--primaryColor);
 	color: var(--mainWhite);
 	border: 1px solid var(--mainWhite);

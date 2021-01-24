@@ -1,0 +1,100 @@
+{
+	"items": [
+		{
+			"sys": {
+				"id": "3"
+			},
+			"fields": {
+				"title": "skateboard casual fiit",
+				"price": 40.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./images/product-3.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "4"
+			},
+			"fields": {
+				"title": "red velvet business fiit",
+				"price": 80.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./images/product-4.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "5"
+			},
+			"fields": {
+				"title": "pinstripe business fiit",
+				"price": 88.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./images/product-5.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "6"
+			},
+			"fields": {
+				"title": "nyterider fiit",
+				"price": 109.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./images/product-6.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "7"
+			},
+			"fields": {
+				"title": "bumblebee hoodie fiit",
+				"price": 45.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./images/product-7.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": {
+				"id": "8"
+			},
+			"fields": {
+				"title": "space casual fiit",
+				"price": 33.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./images/product-8.jpg"
+						}
+					}
+				}
+			}
+		}
+	]
+}
