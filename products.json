@@ -1,50 +1,50 @@
 {
 	"items": [
 		{
-			"id": 1,
+			"id": "1",
 			"title": "flannel casual fiit",
 			"price": 68.99,
 			"image": "./images/product-1.jpg"
 		},
 		{
-			"id": 2,
+			"id": "2",
 			"title": "queen casual fiit",
 			"price": 59.99,
 			"image": "./images/product-2.jpg"
 		},
 		{
-			"id": 3,
+			"id": "3",
 			"title": "skateboard casual fiit",
 			"price": 40.99,
 			"image": "./images/product-3.jpg"
 		},
 		{
-			"id": 4,
+			"id": "4",
 			"title": "red velvet business fiit",
 			"price": 80.99,
 			"image": "./images/product-4.jpg"
 		},
 		{
-			"id": 5,
+			"id": "5",
 			"title": "pinstripe business fiit",
 			"price": 88.99,
 			"image": "./images/product-5.jpg"
 		},
 
 		{
-			"id": 6,
+			"id": "6",
 			"title": "nyterider fiit",
 			"price": 109.99,
 			"image": "./images/product-6.jpg"
 		},
 		{
-			"id": 7,
+			"id": "7",
 			"title": "bumblebee hoodie fiit",
 			"price": 45.99,
 			"image": "./images/product-7.jpg"
 		},
 		{
-			"id": 8,
+			"id": "8",
 			"title": "nasa casual fiit",
 			"price": 33.99,
 			"image": "./images/product-8.jpg"
