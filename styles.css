@@ -317,7 +317,7 @@ body {
 	object-position: top center;
 }
 .close-cart-title {
-	font-size: 0.85rem;
+	font-size: 0.7rem;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: var(--mainSpacing);
@@ -330,7 +330,7 @@ body {
 .item-amount {
 	text-align: center;
 }
-.remove-cart {
+.remove-item {
 	color: var(--primaryColor);
 	cursor: pointer;
 	text-transform: uppercase;
